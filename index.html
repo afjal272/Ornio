@@ -1,438 +1,1750 @@
-/* ==========================================================
-   RESPONSIVE
-   PART 1
-   HEADER + NAVBAR + HERO
-========================================================== */
 
 
-/* ==========================================================
-   1200px
-========================================================== */
+<!DOCTYPE html>
+<html lang="en">
 
-@media (max-width:1200px){
+<head>
 
-    .container{
+    <!-- Basic -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        max-width:1140px;
+    <!-- SEO -->
+    <title>ORNIO | Premium Corporate Gifting Solutions</title>
 
-        padding:0 32px;
+    <meta name="description"
+        content="Premium corporate gifting solutions for businesses. Explore laptop bags, office bags, wallets, travel bags and customized bulk gifting solutions.">
 
-    }
+    <meta name="keywords"
+        content="Corporate Gifting, Bulk Bags, Laptop Bags, Office Bags, Wallets, Promotional Gifts">
 
-    .navbar{
+    <meta name="author" content="ORNIO">
 
-        height:80px;
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/logo/favicon.ico">
 
-    }
+    <!-- Fonts (Google Fonts links baad me add karenge) -->
 
-    .navbar__container{
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 
-        gap:30px;
+</head>
 
-    }
+<body>
 
-    .nav-menu{
 
-        gap:28px;
 
-    }
+<!-- ==========================================================
+                        HEADER
+========================================================== -->
 
-    .hero{
+<header class="header">
 
-        padding:150px 0 90px;
+    <nav class="navbar" aria-label="Primary Navigation">
 
-    }
+        <div class="container navbar__container">
 
-    .hero__wrapper{
+            <!-- Logo -->
 
-        gap:56px;
+            <a href="#home" class="logo" aria-label="ORNIO Home">
 
-    }
+                <span class="logo__text">
 
-    .hero__title{
+                    ORNIO
 
-        font-size:clamp(52px,5vw,62px);
+                </span>
 
-    }
+            </a>
 
-    .hero__description{
+            <!-- Navigation -->
 
-        max-width:520px;
+            <div class="navbar__menu" id="mobile-menu">
 
-        font-size:17px;
+                <ul class="nav-menu">
 
-    }
+                    <li class="nav-item">
 
-    .hero__image-box{
+                        <a href="#home" class="nav-link" aria-current="page">
 
-        width:460px;
+                            Home
 
-        height:460px;
+                        </a>
 
-    }
+                    </li>
 
-}
+                    <li class="nav-item">
 
+                        <a href="#categories" class="nav-link">
 
-/* ==========================================================
-   992px
-========================================================== */
+                            Collections
 
-@media (max-width:992px){
+                        </a>
 
-    .container{
+                    </li>
 
-        padding:0 28px;
+                    <li class="nav-item">
 
-    }
+                        <a href="#products" class="nav-link">
 
-    .navbar{
+                            Products
 
-        height:76px;
+                        </a>
 
-    }
+                    </li>
 
-    .navbar__button{
+                    <li class="nav-item">
 
-        display:none;
+                        <a href="#customization" class="nav-link">
 
-    }
+                            Customization
 
-    .menu-btn{
+                        </a>
 
-        display:flex;
+                    </li>
 
-        align-items:center;
+                    <li class="nav-item">
 
-        justify-content:center;
+                        <a href="#why-ornio" class="nav-link">
 
-    }
+                            Why ORNIO
 
-    .navbar__menu{
+                        </a>
 
-        position:fixed;
+                    </li>
 
-        top:76px;
+                    <li class="nav-item">
 
-        left:0;
+                        <a href="#contact" class="nav-link">
 
-        width:100%;
+                            Contact
 
-        background:#F8F6F2;
+                        </a>
 
-        border-top:1px solid #E7DED2;
+                    </li>
 
-        display:none;
+                </ul>
 
-        padding:30px;
+            </div>
 
-        box-shadow:0 20px 40px rgba(0,0,0,.08);
+            <!-- Right Side -->
 
-    }
+            <div class="navbar__right">
 
-    .navbar__menu.active{
+                <a href="#contact" class="navbar__button">
 
-        display:block;
+                    Get Quote
 
-    }
+                </a>
 
-    .nav-menu{
+                <button
+                    class="menu-btn"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu">
 
-        flex-direction:column;
+                    <span></span>
+                    <span></span>
+                    <span></span>
 
-        align-items:center;
+                </button>
 
-        gap:22px;
+            </div>
 
-    }
+        </div>
 
-    .hero{
+    </nav>
 
-        min-height:auto;
+</header>
 
-        padding:140px 0 90px;
 
-    }
 
-    .hero__wrapper{
 
-        grid-template-columns:1fr;
 
-        gap:60px;
+    <!-- ===========================
+            MAIN
+    ============================ -->
 
-        text-align:center;
+    <main>
 
-    }
 
-    .hero__content{
 
-        order:2;
+<!-- ==========================================================
+                        HERO
+========================================================== -->
 
-        align-items:center;
+<section id="home" class="hero">
 
-    }
+    <div class="container">
 
-    .hero__image{
+        <div class="hero__wrapper">
 
-        order:1;
+            <!-- ==================================================
+                             CONTENT
+            =================================================== -->
 
-    }
+            <div class="hero__content">
 
-    .hero__description{
+                <span class="hero__badge">
 
-        max-width:650px;
+                    Premium Corporate Gifting
 
-    }
+                </span>
 
-    .hero__buttons{
+                <h1 class="hero__title">
 
-        justify-content:center;
+                    Premium Gifts That
+                    Represent Your Brand.
 
-    }
+                </h1>
 
-    .hero__features{
+                <p class="hero__description">
 
-        justify-content:center;
+                    High-quality bags, wallets, travel essentials and
+                    customized gifting solutions designed for businesses,
+                    corporate events and bulk corporate orders across India.
 
-    }
+                </p>
 
-    .hero__image-box{
+                <div class="hero__buttons">
 
-        width:420px;
+                    <a
+                        href="#contact"
+                        class="hero__button">
 
-        height:420px;
+                        Get Bulk Quote
 
-    }
+                    </a>
 
-}
+                    <a
+                        href="#categories"
+                        class="hero__button-outline">
 
+                        Explore Collection
 
-/* ==========================================================
-   768px
-========================================================== */
+                    </a>
 
-@media (max-width:768px){
+                </div>
 
-    .container{
+                <div class="hero__features">
 
-        padding:0 22px;
+                    <div class="hero__feature">
 
-    }
+                        <span class="hero__feature-icon">
 
-    .navbar{
+                            ✓
 
-        height:72px;
+                        </span>
 
-    }
+                        <span class="hero__feature-text">
 
-    .navbar__menu{
+                            Custom Branding
 
-        top:72px;
+                        </span>
 
-    }
+                    </div>
 
-    .logo{
+                    <div class="hero__feature">
 
-        font-size:34px;
+                        <span class="hero__feature-icon">
 
-    }
+                            ✓
 
-    .hero{
+                        </span>
 
-        padding:125px 0 80px;
+                        <span class="hero__feature-text">
 
-    }
+                            Premium Quality
 
-    .hero__title{
+                        </span>
 
-        font-size:clamp(42px,8vw,52px);
+                    </div>
 
-    }
+                    <div class="hero__feature">
 
-    .hero__description{
+                        <span class="hero__feature-icon">
 
-        font-size:16px;
+                            ✓
 
-    }
+                        </span>
 
-    .hero__buttons{
+                        <span class="hero__feature-text">
 
-        flex-direction:column;
+                            Pan India Delivery
 
-        width:100%;
+                        </span>
 
-        gap:16px;
+                    </div>
 
-    }
+                </div>
 
-    .hero__button,
+            </div>
 
-    .hero__button-outline{
+            <!-- ==================================================
+                             IMAGE
+            =================================================== -->
 
-        width:100%;
+            <div class="hero__image">
 
-        max-width:320px;
+                <div class="hero__image-box">
 
-        justify-content:center;
+                    <img
+                        src="./images/hero/hero.jpg"
+                        alt="Premium leather corporate laptop bag for business gifting"
+                        class="hero__image-element">
 
-    }
+                </div>
 
-    .hero__features{
+            </div>
 
-        justify-content:center;
+        </div>
 
-        gap:18px;
+    </div>
 
-    }
+</section>
 
-    .hero__image-box{
+        
 
-        width:340px;
 
-        height:340px;
 
-    }
+<!-- ==========================================================
+                        TRUSTED
+========================================================== -->
 
-}
+<section id="trusted" class="trusted">
 
+    <div class="container">
 
-/* ==========================================================
-   576px
-========================================================== */
+        <div class="trusted__header">
 
-@media (max-width:576px){
+            <span class="trusted__subtitle">
 
-    .container{
+                Why Businesses Choose ORNIO
 
-        padding:0 18px;
+            </span>
 
-    }
+            <h2 class="trusted__title">
 
-    .logo{
+                Built For Premium Corporate Gifting
 
-        font-size:30px;
+            </h2>
 
-    }
+            <p class="trusted__description">
 
-    .hero{
+                From custom branding to nationwide delivery, every order is
+                handled with quality, consistency and attention to detail.
 
-        padding:115px 0 70px;
+            </p>
 
-    }
+        </div>
 
-    .hero__badge{
+        <div class="trusted__grid">
 
-        padding:8px 18px;
+            <article class="trusted__card">
 
-        font-size:13px;
+                <h3 class="trusted__number">
 
-    }
+                    500+
 
-    .hero__title{
+                </h3>
 
-        font-size:38px;
+                <p class="trusted__label">
 
-        line-height:1.12;
+                    Corporate Orders
 
-    }
+                </p>
 
-    .hero__description{
+            </article>
 
-        font-size:15px;
+            <article class="trusted__card">
 
-    }
+                <h3 class="trusted__number">
 
-    .hero__buttons{
+                    100+
 
-        gap:14px;
+                </h3>
 
-    }
+                <p class="trusted__label">
 
-    .hero__button,
+                    Business Clients
 
-    .hero__button-outline{
+                </p>
 
-        max-width:100%;
+            </article>
 
-        padding:15px 24px;
+            <article class="trusted__card">
 
-    }
+                <h3 class="trusted__number">
 
-    .hero__features{
+                    25+
 
-        flex-direction:column;
+                </h3>
 
-        align-items:center;
+                <p class="trusted__label">
 
-        gap:14px;
+                    Cities Served
 
-    }
+                </p>
 
-    .hero__image-box{
+            </article>
 
-        width:290px;
+            <article class="trusted__card">
 
-        height:290px;
+                <h3 class="trusted__number">
 
-    }
+                    100%
 
-}
+                </h3>
 
+                <p class="trusted__label">
 
-/* ==========================================================
-   400px
-========================================================== */
+                    Custom Branding Support
 
-@media (max-width:400px){
+                </p>
 
-    .container{
+            </article>
 
-        padding:0 16px;
+        </div>
 
-    }
+    </div>
 
-    .navbar{
+</section>
 
-        height:68px;
 
-    }
 
-    .navbar__menu{
+       
 
-        top:68px;
+<!-- ==========================================================
+                        CATEGORIES
+========================================================== -->
 
-    }
+<section id="categories" class="categories">
 
-    .logo{
+    <div class="container">
 
-        font-size:28px;
+        <div class="categories__header">
 
-    }
+            <span class="categories__subtitle">
 
-    .hero{
+                OUR COLLECTION
 
-        padding:105px 0 60px;
+            </span>
 
-    }
+            <h2 class="categories__title">
 
-    .hero__title{
+                Explore Our Categories
 
-        font-size:34px;
+            </h2>
 
-    }
+            <p class="categories__description">
 
-    .hero__description{
+                Premium gifting collections crafted for businesses,
+                corporate events and custom branding requirements.
 
-        font-size:14px;
+            </p>
 
-    }
+        </div>
 
-    .hero__image-box{
+        <div class="categories__grid">
 
-        width:250px;
+            <article class="categories__card">
 
-        height:250px;
+                <div class="categories__image">
 
-    }
+                    <img
+                        src="./images/categories/categories-image.jpg"
+                        alt="Premium Laptop Bags"
+                        class="categories__image-element">
 
-}
+                </div>
+
+                <div class="categories__content">
+
+                    <h3 class="categories__name">
+
+                        Laptop Bags
+
+                    </h3>
+
+                    <p class="categories__text">
+
+                        Premium laptop bags designed for professionals,
+                        corporate gifting and daily business use.
+
+                    </p>
+
+                    <a
+                        href="#products"
+                        class="categories__link">
+
+                        View Collection
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="categories__card">
+
+                <div class="categories__image">
+
+                    <img
+                        src="./images/categories/categories-image.jpg"
+                        alt="Premium Office Bags"
+                        class="categories__image-element">
+
+                </div>
+
+                <div class="categories__content">
+
+                    <h3 class="categories__name">
+
+                        Office Bags
+
+                    </h3>
+
+                    <p class="categories__text">
+
+                        Elegant office bags crafted for modern professionals
+                        and executive gifting.
+
+                    </p>
+
+                    <a
+                        href="#products"
+                        class="categories__link">
+
+                        View Collection
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="categories__card">
+
+                <div class="categories__image">
+
+                    <img
+                        src="./images/categories/categories-image.jpg"
+                        alt="Premium Travel Bags"
+                        class="categories__image-element">
+
+                </div>
+
+                <div class="categories__content">
+
+                    <h3 class="categories__name">
+
+                        Travel Bags
+
+                    </h3>
+
+                    <p class="categories__text">
+
+                        Durable travel bags combining premium quality,
+                        functionality and comfort.
+
+                    </p>
+
+                    <a
+                        href="#products"
+                        class="categories__link">
+
+                        View Collection
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="categories__card">
+
+                <div class="categories__image">
+
+                    <img
+                        src="./images/categories/categories-image.jpg"
+                        alt="Premium Wallets"
+                        class="categories__image-element">
+
+                </div>
+
+                <div class="categories__content">
+
+                    <h3 class="categories__name">
+
+                        Wallets
+
+                    </h3>
+
+                    <p class="categories__text">
+
+                        Premium leather wallets perfect for executive
+                        gifting and brand customization.
+
+                    </p>
+
+                    <a
+                        href="#products"
+                        class="categories__link">
+
+                        View Collection
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="categories__card">
+
+                <div class="categories__image">
+
+                    <img
+                        src="./images/categories/categories-image.jpg"
+                        alt="Premium Sling Bags"
+                        class="categories__image-element">
+
+                </div>
+
+                <div class="categories__content">
+
+                    <h3 class="categories__name">
+
+                        Sling Bags
+
+                    </h3>
+
+                    <p class="categories__text">
+
+                        Stylish sling bags created for everyday use
+                        and premium corporate gifting.
+
+                    </p>
+
+                    <a
+                        href="#products"
+                        class="categories__link">
+
+                        View Collection
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+       
+<!-- ==========================================================
+                        PRODUCTS
+========================================================== -->
+
+<section id="products" class="products">
+
+    <div class="container">
+
+        <div class="products__header">
+
+            <span class="products__subtitle">
+
+                FEATURED COLLECTION
+
+            </span>
+
+            <h2 class="products__title">
+
+                Best Selling Products
+
+            </h2>
+
+            <p class="products__header-description">
+
+                Explore our premium corporate gifting collection,
+                carefully selected for businesses, bulk orders and
+                custom branding requirements.
+
+            </p>
+
+        </div>
+
+        <!-- Products Rendered Dynamically -->
+
+        <div
+            id="featured-products"
+            class="products__grid">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+        <!-- Editorial Banner 
+        <section id="editorial" class="editorial">
+
+        </section> -->
+
+        
+        
+
+<!-- ==========================================================
+                    CUSTOMIZATION
+========================================================== -->
+
+<section id="customization" class="customization">
+
+    <div class="container">
+
+        <div class="customization__header">
+
+            <span class="customization__subtitle">
+
+                CUSTOMIZATION
+
+            </span>
+
+            <h2 class="customization__title">
+
+                Personalize Every Gift
+
+            </h2>
+
+            <p class="customization__header-description">
+
+                Make every product uniquely yours with premium branding,
+                packaging and customization options.
+
+            </p>
+
+        </div>
+
+        <div class="customization__grid">
+
+            <article class="customization__card">
+
+                <div class="customization__icon">
+
+                    🎨
+
+                </div>
+
+                <h3 class="customization__card-title">
+
+                    Logo Printing
+
+                </h3>
+
+                <p class="customization__card-description">
+
+                    High-quality logo printing with a durable and premium finish.
+
+                </p>
+
+            </article>
+
+            <article class="customization__card">
+
+                <div class="customization__icon">
+
+                    🪡
+
+                </div>
+
+                <h3 class="customization__card-title">
+
+                    Embossing
+
+                </h3>
+
+                <p class="customization__card-description">
+
+                    Premium embossed branding for a refined luxury appearance.
+
+                </p>
+
+            </article>
+
+            <article class="customization__card">
+
+                <div class="customization__icon">
+
+                    🎁
+
+                </div>
+
+                <h3 class="customization__card-title">
+
+                    Gift Packaging
+
+                </h3>
+
+                <p class="customization__card-description">
+
+                    Elegant boxes, sleeves and premium presentation options.
+
+                </p>
+
+            </article>
+
+            <article class="customization__card">
+
+                <div class="customization__icon">
+
+                    🎨
+
+                </div>
+
+                <h3 class="customization__card-title">
+
+                    Custom Colors
+
+                </h3>
+
+                <p class="customization__card-description">
+
+                    Match every product perfectly with your brand identity.
+
+                </p>
+
+            </article>
+
+            <article class="customization__card">
+
+                <div class="customization__icon">
+
+                    🏷️
+
+                </div>
+
+                <h3 class="customization__card-title">
+
+                    Metal Logo
+
+                </h3>
+
+                <p class="customization__card-description">
+
+                    Premium metal branding for executive corporate gifting.
+
+                </p>
+
+            </article>
+
+            <article class="customization__card">
+
+                <div class="customization__icon">
+
+                    📦
+
+                </div>
+
+                <h3 class="customization__card-title">
+
+                    Bulk Packaging
+
+                </h3>
+
+                <p class="customization__card-description">
+
+                    Secure packaging designed for safe bulk transportation.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ==========================================================
+                        WHY ORNIO
+========================================================== -->
+
+<section id="why-ornio" class="why">
+
+    <div class="container">
+
+        <div class="why__header">
+
+            <span class="why__subtitle">
+
+                WHY ORNIO
+
+            </span>
+
+            <h2 class="why__title">
+
+                Corporate Gifting Made Simple
+
+            </h2>
+
+            <p class="why__header-description">
+
+                We combine premium products, reliable service and custom
+                branding to help businesses create memorable gifting experiences.
+
+            </p>
+
+        </div>
+
+        <div class="why__grid">
+
+            <article class="why__card">
+
+                <div class="why__icon">
+
+                    🏆
+
+                </div>
+
+                <h3 class="why__card-title">
+
+                    Premium Quality
+
+                </h3>
+
+                <p class="why__card-description">
+
+                    Carefully selected products crafted with premium
+                    materials and exceptional workmanship.
+
+                </p>
+
+            </article>
+
+            <article class="why__card">
+
+                <div class="why__icon">
+
+                    🎨
+
+                </div>
+
+                <h3 class="why__card-title">
+
+                    Custom Branding
+
+                </h3>
+
+                <p class="why__card-description">
+
+                    Logo printing, embossing, metal branding and premium
+                    packaging tailored to your business.
+
+                </p>
+
+            </article>
+
+            <article class="why__card">
+
+                <div class="why__icon">
+
+                    🚚
+
+                </div>
+
+                <h3 class="why__card-title">
+
+                    Pan India Delivery
+
+                </h3>
+
+                <p class="why__card-description">
+
+                    Reliable production and secure nationwide delivery
+                    for corporate and bulk orders.
+
+                </p>
+
+            </article>
+
+            <article class="why__card">
+
+                <div class="why__icon">
+
+                    💼
+
+                </div>
+
+                <h3 class="why__card-title">
+
+                    Bulk Order Support
+
+                </h3>
+
+                <p class="why__card-description">
+
+                    Dedicated assistance from enquiry to delivery for
+                    businesses, distributors and corporate clients.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ==========================================================
+                        PROCESS
+========================================================== -->
+
+<section id="process" class="process">
+
+    <div class="container">
+
+        <div class="process__header">
+
+            <span class="process__subtitle">
+
+                OUR PROCESS
+
+            </span>
+
+            <h2 class="process__title">
+
+                From Inquiry To Delivery
+
+            </h2>
+
+            <p class="process__header-description">
+
+                Our streamlined process ensures every corporate order is
+                delivered with quality, precision and on time.
+
+            </p>
+
+        </div>
+
+        <div class="process__grid">
+
+            <article class="process__card">
+
+                <div class="process__number">
+
+                    01
+
+                </div>
+
+                <h3 class="process__card-title">
+
+                    Share Requirement
+
+                </h3>
+
+                <p class="process__card-description">
+
+                    Tell us your product, quantity, branding and delivery
+                    requirements.
+
+                </p>
+
+            </article>
+
+            <article class="process__card">
+
+                <div class="process__number">
+
+                    02
+
+                </div>
+
+                <h3 class="process__card-title">
+
+                    Receive Quotation
+
+                </h3>
+
+                <p class="process__card-description">
+
+                    We prepare the best pricing and customization options
+                    for your approval.
+
+                </p>
+
+            </article>
+
+            <article class="process__card">
+
+                <div class="process__number">
+
+                    03
+
+                </div>
+
+                <h3 class="process__card-title">
+
+                    Production
+
+                </h3>
+
+                <p class="process__card-description">
+
+                    Products are manufactured and customized according
+                    to the approved specifications.
+
+                </p>
+
+            </article>
+
+            <article class="process__card">
+
+                <div class="process__number">
+
+                    04
+
+                </div>
+
+                <h3 class="process__card-title">
+
+                    Delivery
+
+                </h3>
+
+                <p class="process__card-description">
+
+                    Bulk orders are securely packed and delivered
+                    across India.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ==========================================================
+                        FAQ
+========================================================== -->
+
+<section id="faq" class="faq">
+
+    <div class="container">
+
+        <div class="faq__header">
+
+            <span class="faq__subtitle">
+
+                FREQUENTLY ASKED QUESTIONS
+
+            </span>
+
+            <h2 class="faq__title">
+
+                Everything You Need To Know
+
+            </h2>
+
+            <p class="faq__header-description">
+
+                Find answers to the most common questions about our
+                corporate gifting solutions.
+
+            </p>
+
+        </div>
+
+        <div class="faq__wrapper">
+
+            <article class="faq__item active">
+
+                <button class="faq__question">
+
+                    <span>
+
+                        What is the minimum order quantity (MOQ)?
+
+                    </span>
+
+                    <span class="faq__icon">
+
+                        +
+
+                    </span>
+
+                </button>
+
+                <div class="faq__answer">
+
+                    <p>
+
+                        MOQ depends on the product. Most products start
+                        from 50 pieces for customization and bulk orders.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="faq__item">
+
+                <button class="faq__question">
+
+                    <span>
+
+                        Can I customize products with my company logo?
+
+                    </span>
+
+                    <span class="faq__icon">
+
+                        +
+
+                    </span>
+
+                </button>
+
+                <div class="faq__answer">
+
+                    <p>
+
+                        Yes. We offer logo printing, embossing, metal
+                        branding and premium packaging options.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="faq__item">
+
+                <button class="faq__question">
+
+                    <span>
+
+                        How long does delivery take?
+
+                    </span>
+
+                    <span class="faq__icon">
+
+                        +
+
+                    </span>
+
+                </button>
+
+                <div class="faq__answer">
+
+                    <p>
+
+                        Delivery depends on quantity and customization.
+                        Standard production usually takes 7 to 15 business days.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="faq__item">
+
+                <button class="faq__question">
+
+                    <span>
+
+                        Do you deliver across India?
+
+                    </span>
+
+                    <span class="faq__icon">
+
+                        +
+
+                    </span>
+
+                </button>
+
+                <div class="faq__answer">
+
+                    <p>
+
+                        Yes. We provide secure Pan India delivery for
+                        bulk corporate orders.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ==========================================================
+                        CTA
+========================================================== -->
+
+<section id="cta" class="cta">
+
+    <div class="container">
+
+        <div class="cta__wrapper">
+
+            <div class="cta__content">
+
+                <span class="cta__subtitle">
+
+                    LET'S WORK TOGETHER
+
+                </span>
+
+                <h2 class="cta__title">
+
+                    Ready To Create Premium
+                    Corporate Gifts?
+
+                </h2>
+
+                <p class="cta__description">
+
+                    Whether you need gifts for employees, clients,
+                    events or reselling, we'll help you choose the
+                    perfect collection for your business.
+
+                </p>
+
+                <div class="cta__buttons">
+
+                    <a
+                        href="#contact"
+                        class="cta__button">
+
+                        Get Bulk Quote
+
+                    </a>
+
+                    <a
+                        href="#"
+                        class="cta__button-outline">
+
+                        WhatsApp Us
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="cta__image">
+
+                <img
+                    src="./images/categories/categories-image.jpg"
+                    alt="Premium Corporate Gifts"
+                    class="cta__image-element">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+        
+<!-- ==========================================================
+                        CONTACT
+========================================================== -->
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="contact__header">
+
+            <span class="contact__subtitle">
+
+                CONTACT US
+
+            </span>
+
+            <h2 class="contact__title">
+
+                Let's Discuss Your Requirement
+
+            </h2>
+
+            <p class="contact__header-description">
+
+                Fill out the form and we'll get back to you with
+                the best quotation for your bulk order.
+
+            </p>
+
+        </div>
+
+        <div class="contact__wrapper">
+
+            <div class="contact__info">
+
+                <article class="contact__card">
+
+                    <h3 class="contact__card-title">
+
+                        Phone
+
+                    </h3>
+
+                    <p class="contact__card-text">
+
+                        +91 XXXXX XXXXX
+
+                    </p>
+
+                </article>
+
+                <article class="contact__card">
+
+                    <h3 class="contact__card-title">
+
+                        Email
+
+                    </h3>
+
+                    <p class="contact__card-text">
+
+                        hello@ornio.in
+
+                    </p>
+
+                </article>
+
+                <article class="contact__card">
+
+                    <h3 class="contact__card-title">
+
+                        Address
+
+                    </h3>
+
+                    <p class="contact__card-text">
+
+                        Your Business Address
+
+                    </p>
+
+                </article>
+
+            </div>
+
+            <form class="contact__form">
+
+                <input
+                    class="contact__input"
+                    type="text"
+                    placeholder="Company Name"
+                    required>
+
+                <input
+                    class="contact__input"
+                    type="text"
+                    placeholder="Contact Person"
+                    required>
+
+                <input
+                    class="contact__input"
+                    type="email"
+                    placeholder="Email Address"
+                    required>
+
+                <input
+                    class="contact__input"
+                    type="tel"
+                    placeholder="Phone Number"
+                    required>
+
+                <textarea
+                    class="contact__textarea"
+                    rows="6"
+                    placeholder="Tell us about your requirement..."></textarea>
+
+                <button
+                    type="submit"
+                    class="contact__button">
+
+                    Send Inquiry
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+    </main>
+
+
+
+<!-- ==========================================================
+                        FOOTER
+========================================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer__top">
+
+            <div class="footer__about">
+
+                <a
+                    href="#home"
+                    class="footer__logo">
+
+                    ORNIO
+
+                </a>
+
+                <p class="footer__description">
+
+                    Premium corporate gifting solutions designed for
+                    businesses, organizations and wholesale buyers.
+
+                </p>
+
+            </div>
+
+            <div class="footer__column">
+
+                <h3 class="footer__heading">
+
+                    Quick Links
+
+                </h3>
+
+                <ul class="footer__list">
+
+                    <li class="footer__item">
+
+                        <a
+                            href="#home"
+                            class="footer__link">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <a
+                            href="#categories"
+                            class="footer__link">
+
+                            Collections
+
+                        </a>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <a
+                            href="#why-ornio"
+                            class="footer__link">
+
+                            Why ORNIO
+
+                        </a>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <a
+                            href="#contact"
+                            class="footer__link">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer__column">
+
+                <h3 class="footer__heading">
+
+                    Products
+
+                </h3>
+
+                <ul class="footer__list">
+
+                    <li class="footer__item">
+
+                        Laptop Bags
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        Office Bags
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        Travel Bags
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        Wallets
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        Sling Bags
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer__column">
+
+                <h3 class="footer__heading">
+
+                    Contact
+
+                </h3>
+
+                <ul class="footer__list">
+
+                    <li class="footer__item">
+
+                        <a
+                            href="tel:+91XXXXXXXXXX"
+                            class="footer__link">
+
+                            +91 XXXXX XXXXX
+
+                        </a>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <a
+                            href="mailto:hello@ornio.in"
+                            class="footer__link">
+
+                            hello@ornio.in
+
+                        </a>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        India
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+
+            <p class="footer__copyright">
+
+                © 2026 ORNIO. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+    <!-- ===========================
+            JAVASCRIPT
+    ============================ -->
+
+    <script src="./data/products.js"></script>
+
+    <script src="./js/products.js"></script>
+
+    <script src="./js/faq.js"></script>
+
+    <script src="./js/navbar.js"></script>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
