@@ -599,3 +599,303 @@
     }
 
 }
+
+
+/* ==========================================================
+   RESPONSIVE
+   PART 3
+   WHY + PROCESS + FAQ
+========================================================== */
+
+
+/* ==========================================================
+   1024px
+========================================================== */
+
+@media (max-width:1024px){
+
+    .why,
+    .process,
+    .faq{
+
+        padding:100px 0;
+
+    }
+
+    .why__grid,
+    .process__grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:24px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   768px
+========================================================== */
+
+@media (max-width:768px){
+
+    .why,
+    .process,
+    .faq{
+
+        padding:90px 0;
+
+    }
+
+    .why__header,
+    .process__header,
+    .faq__header{
+
+        margin-bottom:50px;
+
+    }
+
+    .why__grid,
+    .process__grid{
+
+        grid-template-columns:1fr;
+
+        gap:24px;
+
+    }
+
+    .why__card,
+    .process__card{
+
+        max-width:520px;
+
+        width:100%;
+
+        margin:0 auto;
+
+    }
+
+    .why__card-title,
+    .process__card-title{
+
+        font-size:24px;
+
+    }
+
+    .faq__wrapper{
+
+        max-width:100%;
+
+    }
+
+    .faq__question{
+
+        padding:24px 26px;
+
+        font-size:18px;
+
+    }
+
+    .faq__answer p{
+
+        padding:0 26px;
+
+    }
+
+    .faq__item.active .faq__answer p{
+
+        padding:0 26px 26px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   576px
+========================================================== */
+
+@media (max-width:576px){
+
+    .why,
+    .process,
+    .faq{
+
+        padding:80px 0;
+
+    }
+
+    .why__title,
+    .process__title,
+    .faq__title{
+
+        font-size:36px;
+
+    }
+
+    .why__header-description,
+    .process__header-description,
+    .faq__header-description{
+
+        font-size:16px;
+
+    }
+
+    .why__card,
+    .process__card{
+
+        padding:34px 24px;
+
+    }
+
+    .why__icon{
+
+        width:70px;
+
+        height:70px;
+
+        font-size:34px;
+
+    }
+
+    .process__number{
+
+        width:56px;
+
+        height:56px;
+
+        font-size:20px;
+
+    }
+
+    .why__card-title,
+    .process__card-title{
+
+        font-size:22px;
+
+    }
+
+    .why__card-description,
+    .process__card-description{
+
+        font-size:15px;
+
+    }
+
+    .faq__question{
+
+        padding:22px;
+
+        font-size:17px;
+
+    }
+
+    .faq__icon{
+
+        width:34px;
+
+        height:34px;
+
+        font-size:20px;
+
+    }
+
+    .faq__answer p{
+
+        padding:0 22px;
+
+        font-size:15px;
+
+    }
+
+    .faq__item.active .faq__answer p{
+
+        padding:0 22px 22px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   400px
+========================================================== */
+
+@media (max-width:400px){
+
+    .why,
+    .process,
+    .faq{
+
+        padding:70px 0;
+
+    }
+
+    .why__title,
+    .process__title,
+    .faq__title{
+
+        font-size:32px;
+
+    }
+
+    .why__card,
+    .process__card{
+
+        padding:28px 20px;
+
+    }
+
+    .why__icon{
+
+        width:60px;
+
+        height:60px;
+
+        font-size:28px;
+
+    }
+
+    .process__number{
+
+        width:50px;
+
+        height:50px;
+
+        font-size:18px;
+
+    }
+
+    .why__card-title,
+    .process__card-title{
+
+        font-size:20px;
+
+    }
+
+    .faq__question{
+
+        padding:20px;
+
+        font-size:16px;
+
+    }
+
+    .faq__answer p{
+
+        padding:0 20px;
+
+        font-size:14px;
+
+    }
+
+    .faq__item.active .faq__answer p{
+
+        padding:0 20px 20px;
+
+    }
+
+}
+
+
