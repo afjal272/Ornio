@@ -422,3 +422,292 @@
     }
 
 }
+
+
+/* ==========================================================
+   RESPONSIVE
+   PART 2
+   Trusted + Categories + Products + Customization
+========================================================== */
+
+
+/* ==========================================================
+   1200px
+========================================================== */
+
+@media (max-width:1200px){
+
+    .trusted__grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:24px;
+
+    }
+
+    .categories__grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+        gap:24px;
+
+    }
+
+    .products__grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+        gap:24px;
+
+    }
+
+    .customization__grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+        gap:24px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   992px
+========================================================== */
+
+@media (max-width:992px){
+
+    .trusted__header,
+    .categories__header,
+    .products__header,
+    .customization__header{
+
+        margin-bottom:56px;
+
+    }
+
+    .trusted__grid,
+    .categories__grid,
+    .products__grid,
+    .customization__grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:24px;
+
+    }
+
+    .trusted__card,
+    .categories__card,
+    .products__card,
+    .customization__card{
+
+        border-radius:22px;
+
+    }
+
+    .trusted__number{
+
+        font-size:46px;
+
+    }
+
+    .categories__name,
+    .products__name,
+    .customization__card-title{
+
+        font-size:24px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   768px
+========================================================== */
+
+@media (max-width:768px){
+
+    .trusted__grid,
+    .categories__grid,
+    .products__grid,
+    .customization__grid{
+
+        grid-template-columns:1fr;
+
+        gap:22px;
+
+    }
+
+    .trusted__header,
+    .categories__header,
+    .products__header,
+    .customization__header{
+
+        margin-bottom:48px;
+
+    }
+
+    .trusted__card,
+    .categories__card,
+    .products__card,
+    .customization__card{
+
+        max-width:520px;
+
+        margin:0 auto;
+
+    }
+
+    .categories__content,
+    .products__content{
+
+        padding:22px;
+
+    }
+
+    .categories__name,
+    .products__name,
+    .customization__card-title{
+
+        font-size:22px;
+
+    }
+
+    .trusted__number{
+
+        font-size:42px;
+
+    }
+
+    .customization__icon{
+
+        width:72px;
+
+        height:72px;
+
+        font-size:34px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   576px
+========================================================== */
+
+@media (max-width:576px){
+
+    .trusted__card,
+    .categories__card,
+    .products__card,
+    .customization__card{
+
+        border-radius:20px;
+
+    }
+
+    .trusted__card{
+
+        padding:34px 22px;
+
+    }
+
+    .customization__card{
+
+        padding:34px 24px;
+
+    }
+
+    .categories__content,
+    .products__content{
+
+        padding:20px;
+
+    }
+
+    .trusted__number{
+
+        font-size:38px;
+
+    }
+
+    .categories__name,
+    .products__name,
+    .customization__card-title{
+
+        font-size:20px;
+
+    }
+
+    .categories__text,
+    .products__text,
+    .customization__card-description{
+
+        font-size:15px;
+
+    }
+
+    .categories__link,
+    .products__link{
+
+        font-size:14px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   400px
+========================================================== */
+
+@media (max-width:400px){
+
+    .trusted__card{
+
+        padding:30px 18px;
+
+    }
+
+    .categories__content,
+    .products__content{
+
+        padding:18px;
+
+    }
+
+    .customization__card{
+
+        padding:30px 20px;
+
+    }
+
+    .trusted__number{
+
+        font-size:34px;
+
+    }
+
+    .categories__name,
+    .products__name,
+    .customization__card-title{
+
+        font-size:18px;
+
+    }
+
+    .customization__icon{
+
+        width:64px;
+
+        height:64px;
+
+        font-size:30px;
+
+    }
+
+}
