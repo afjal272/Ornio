@@ -899,3 +899,379 @@
 }
 
 
+/* ==========================================================
+   RESPONSIVE
+   PART 4
+   CTA + CONTACT + FOOTER
+========================================================== */
+
+
+/* ==========================================================
+   1024px
+========================================================== */
+
+@media (max-width:1024px){
+
+    .cta,
+    .contact,
+    .footer{
+
+        padding-top:100px;
+
+    }
+
+    .cta__wrapper{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:50px;
+
+        padding:70px 60px;
+
+    }
+
+    .cta__content{
+
+        max-width:100%;
+
+        margin:0 auto;
+
+    }
+
+    .cta__description{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+    .cta__buttons{
+
+        justify-content:center;
+
+    }
+
+    .contact__wrapper{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    .footer__top{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:50px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   768px
+========================================================== */
+
+@media (max-width:768px){
+
+    .cta,
+    .contact{
+
+        padding:90px 0;
+
+    }
+
+    .cta__wrapper{
+
+        padding:60px 36px;
+
+        border-radius:28px;
+
+    }
+
+    .cta__title{
+
+        font-size:44px;
+
+    }
+
+    .cta__buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .cta__button,
+    .cta__button-outline{
+
+        width:100%;
+
+        max-width:320px;
+
+        justify-content:center;
+
+    }
+
+    .cta__image-element{
+
+        max-width:320px;
+
+    }
+
+    .contact__form{
+
+        padding:30px;
+
+    }
+
+    .contact__card{
+
+        padding:28px;
+
+    }
+
+    .footer{
+
+        padding-top:80px;
+
+    }
+
+    .footer__top{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:40px;
+
+    }
+
+    .footer__about{
+
+        max-width:100%;
+
+        margin:0 auto;
+
+    }
+
+    .footer__list{
+
+        align-items:center;
+
+    }
+
+    .footer__link{
+
+        margin:0 auto;
+
+    }
+
+}
+
+
+/* ==========================================================
+   576px
+========================================================== */
+
+@media (max-width:576px){
+
+    .cta,
+    .contact{
+
+        padding:80px 0;
+
+    }
+
+    .cta__wrapper{
+
+        padding:45px 24px;
+
+        border-radius:24px;
+
+    }
+
+    .cta__title{
+
+        font-size:38px;
+
+    }
+
+    .cta__description{
+
+        font-size:15px;
+
+    }
+
+    .cta__image-element{
+
+        max-width:260px;
+
+    }
+
+    .contact__title{
+
+        font-size:36px;
+
+    }
+
+    .contact__header-description{
+
+        font-size:16px;
+
+    }
+
+    .contact__form{
+
+        padding:24px;
+
+    }
+
+    .contact__card{
+
+        padding:24px;
+
+    }
+
+    .contact__card-title{
+
+        font-size:24px;
+
+    }
+
+    .contact__button{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .footer{
+
+        padding-top:70px;
+
+    }
+
+    .footer__logo{
+
+        font-size:36px;
+
+    }
+
+    .footer__heading{
+
+        font-size:18px;
+
+    }
+
+    .footer__description{
+
+        font-size:15px;
+
+    }
+
+    .footer__item{
+
+        font-size:15px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   400px
+========================================================== */
+
+@media (max-width:400px){
+
+    .cta,
+    .contact{
+
+        padding:70px 0;
+
+    }
+
+    .cta__wrapper{
+
+        padding:36px 20px;
+
+    }
+
+    .cta__title{
+
+        font-size:32px;
+
+    }
+
+    .cta__image-element{
+
+        max-width:220px;
+
+    }
+
+    .contact__form{
+
+        padding:20px;
+
+    }
+
+    .contact__card{
+
+        padding:20px;
+
+    }
+
+    .contact__input,
+    .contact__textarea{
+
+        padding:16px 18px;
+
+        font-size:15px;
+
+    }
+
+    .footer{
+
+        padding-top:60px;
+
+    }
+
+    .footer__logo{
+
+        font-size:32px;
+
+    }
+
+    .footer__description{
+
+        font-size:14px;
+
+    }
+
+    .footer__heading{
+
+        font-size:17px;
+
+    }
+
+    .footer__item{
+
+        font-size:14px;
+
+    }
+
+    .footer__copyright{
+
+        font-size:13px;
+
+    }
+
+}
