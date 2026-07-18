@@ -3827,7 +3827,7 @@ body.menu-open{
 
         right:18px;
 
-        bottom:18px;
+        bottom:max(24px, env(safe-area-inset-bottom));
 
     }
 
