@@ -3,8 +3,9 @@
    Products
 
    File    : products.js
-   Version : 2.1
+   Version : 2.2
 ========================================================== */
+
 
 /* ==========================================================
    PRODUCTS
@@ -16,16 +17,18 @@ function renderFeaturedProducts() {
 
     if (!featuredProductsContainer) return;
 
-    featuredProductsContainer.innerHTML = featuredProducts.map((product) => `
+    featuredProductsContainer.innerHTML = featuredProducts.map((product, index) => `
 
-        <article class="products__card">
+        <article class="products__card reveal delay-${(index % 4) + 1}">
 
             <div class="products__image">
 
                 <img
                     src="${product.image}"
                     alt="${product.title}"
-                    class="products__image-element">
+                    class="products__image-element"
+                    loading="lazy"
+                    decoding="async">
 
             </div>
 
@@ -62,6 +65,14 @@ function renderFeaturedProducts() {
         </article>
 
     `).join("");
+
+    /* Re-observe dynamically created reveal elements */
+
+    if (typeof initScrollReveal === "function") {
+
+        initScrollReveal();
+
+    }
 
 }
 
