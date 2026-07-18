@@ -54,13 +54,19 @@ function createRevealObserver(){
    SCROLL REVEAL
 ========================================================== */
 
-function initScrollReveal(){
+function initScrollReveal() {
+
+    if (!revealObserver) {
+
+        createRevealObserver();
+
+    }
 
     const elements = document.querySelectorAll(".reveal:not(.active)");
 
-    if(!elements.length) return;
+    if (!elements.length) return;
 
-    elements.forEach(element=>{
+    elements.forEach(element => {
 
         revealObserver.observe(element);
 

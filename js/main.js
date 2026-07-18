@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initFaq();
 
+    initContactForm();
+
 });
 
 

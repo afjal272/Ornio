@@ -1479,46 +1479,116 @@
 
             </div>
 
-            <form class="contact__form reveal reveal--right">
+            <form
+    id="contact-form"
+    class="contact__form reveal reveal--right">
 
-                <input
-                    class="contact__input"
-                    type="text"
-                    placeholder="Company Name"
-                    required>
+    <input
+        id="company"
+        name="company"
+        class="contact__input"
+        type="text"
+        placeholder="Company Name *"
+        autocomplete="organization"
+        required>
 
-                <input
-                    class="contact__input"
-                    type="text"
-                    placeholder="Contact Person"
-                    required>
+    <input
+        id="person"
+        name="person"
+        class="contact__input"
+        type="text"
+        placeholder="Contact Person *"
+        autocomplete="name"
+        required>
 
-                <input
-                    class="contact__input"
-                    type="email"
-                    placeholder="Email Address"
-                    required>
+    <input
+        id="email"
+        name="email"
+        class="contact__input"
+        type="email"
+        placeholder="Email Address *"
+        autocomplete="email"
+        required>
 
-                <input
-                    class="contact__input"
-                    type="tel"
-                    placeholder="Phone Number"
-                    required>
+    <input
+        id="phone"
+        name="phone"
+        class="contact__input"
+        type="tel"
+        inputmode="numeric"
+        maxlength="10"
+        placeholder="Phone Number *"
+        autocomplete="tel"
+        required>
 
-                <textarea
-                    class="contact__textarea"
-                    rows="6"
-                    placeholder="Tell us about your requirement..."></textarea>
+    <select
+        id="product"
+        name="product"
+        class="contact__input"
+        required>
 
-                <button
-                    type="submit"
-                    class="contact__button">
+        <option value="" selected disabled>
 
-                    Send Inquiry
+            Select Product
 
-                </button>
+        </option>
 
-            </form>
+        <option>Backpacks</option>
+
+        <option>Laptop Bags</option>
+
+        <option>Travel Bags</option>
+
+        <option>Trolley Bags</option>
+
+        <option>Wallets</option>
+
+        <option>Gift Sets</option>
+
+        <option>Others</option>
+
+    </select>
+
+    <select
+        id="quantity"
+        name="quantity"
+        class="contact__input"
+        required>
+
+        <option value="" selected disabled>
+
+            Estimated Quantity
+
+        </option>
+
+        <option>1 - 25</option>
+
+        <option>26 - 100</option>
+
+        <option>101 - 500</option>
+
+        <option>500+</option>
+
+    </select>
+
+    <textarea
+        id="message"
+        name="message"
+        class="contact__textarea"
+        rows="6"
+        placeholder="Tell us about your requirement..."
+        required></textarea>
+
+    <button
+        id="contact-submit"
+        type="submit"
+        class="contact__button">
+
+        Send Inquiry
+
+    </button>
+
+</form>
 
         </div>
 
@@ -1752,6 +1822,8 @@
     <script src="./js/main.js"></script>
 
     <script src="./js/scrollReveal.js"></script>
+
+    <script src="./js/contact.js"></script>
 
 </body>
 
