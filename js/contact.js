@@ -146,3 +146,27 @@ Thank you.`;
     });
 
 }
+
+
+
+function initFloatingWhatsapp() {
+
+    const button = document.getElementById("whatsapp-float");
+
+    if (!button) return;
+
+    window.addEventListener("scroll", () => {
+
+        if (window.scrollY > 100) {
+
+            button.classList.add("show");
+
+        } else {
+
+            button.classList.remove("show");
+
+        }
+
+    }, { passive: true });
+
+}
