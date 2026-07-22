@@ -30,7 +30,7 @@ function initNavbar() {
         menuButton.classList.add("active");
         menuButton.setAttribute("aria-expanded", "true");
 
-        document.body.style.overflow = "hidden";
+        document.body.classList.add("menu-open");
 
     }
 
@@ -40,7 +40,7 @@ function initNavbar() {
         menuButton.classList.remove("active");
         menuButton.setAttribute("aria-expanded", "false");
 
-        document.body.style.overflow = "";
+        document.body.classList.remove("menu-open");
 
     }
 
